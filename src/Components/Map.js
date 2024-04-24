@@ -143,7 +143,7 @@ const MapChart = () => {
         onTouchStart={handleStart}
         onTouchMove={handleMove}
         onTouchEnd={handleEndOrLeave}
-        className="h-screen w-full"
+        className="h-dvh w-full"
       >
         <ComposableMap
           projection={rotatingProjection(rotation)}
