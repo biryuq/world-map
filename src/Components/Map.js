@@ -186,11 +186,11 @@ const MapChart = () => {
        
         </ComposableMap>
       </div>
-      <div className="absolute bottom-2 right-2">
+      <div className="absolute bottom-2 left-2 w-full p-2 ">
         <MapLabel data={activeLable} />
       </div>
-      <div className="absolute top-2 right-2">
-   <button className=" px-2 py-2 rounded-md hover:bg-blue-400  shadow  hover:text-blue-700"
+      <div className="absolute top-2 left-2">
+   <button className=" px-2 py-2 rounded-md bg-[#E5EEFB] hover:bg-blue-400  shadow  hover:text-blue-700"
    onClick={resetRotation}><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width={24}><title/><path d="M21.91,4.09a1,1,0,0,0-1.07.16L19.48,5.46A9.81,9.81,0,0,0,12,2a10,10,0,1,0,9.42,13.33,1,1,0,0,0-1.89-.66A8,8,0,1,1,12,4a7.86,7.86,0,0,1,6,2.78L16.34,8.25a1,1,0,0,0-.27,1.11A1,1,0,0,0,17,10h4.5a1,1,0,0,0,1-1V5A1,1,0,0,0,21.91,4.09Z" fill="black"/></svg></button>
    </div>
     </div>

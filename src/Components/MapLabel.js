@@ -9,7 +9,7 @@ function MapLabel(props) {
 
   if (country) {
     return (
-      <div className="flex flex-col items-start bg-blue-50/90  rounded-xl w-96 p-4 shadow-xl ">
+        <div className="flex flex-col items-start bg-blue-50/90 rounded-xl  w-full md:w-96 p-4 ">
         <div className="flex items-center gap-2 ">
           <div className="w-8 rounded-xl items-center flex">
             <img src={country.href.flag} alt={`Flag of ${country.name}`} />
@@ -42,7 +42,7 @@ function MapLabel(props) {
       </div>
     );
   } else {
-    return   <div className="flex flex-col items-start bg-blue-50/90 rounded-xl w-96 p-4 ">
+    return   <div className="flex flex-col items-start bg-blue-50/90 rounded-xl  w-full md:w-96 p-4 ">
          <h1 className="text-3xl font-bold text-left pb-8 ">Welcome to your global journey!</h1>
          <p className="text-xl text-left  font-medium text-blue-950">Spin the globe and tap any spot that catches your eye! </p>
          <div className="flex justify-between w-full pt-2">
