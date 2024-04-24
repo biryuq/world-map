@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   ComposableMap,
   Geographies,
@@ -9,13 +9,13 @@ import {
 import { geoOrthographic } from "d3-geo";
 import MapLabel from "./MapLabel";
 
-const initialRotation = [-11, -41, 5]; // Initial rotation
+const initialRotation = [-11, -41, 5]; 
 
 const rotatingProjection = (rotation = initialRotation) => {
   const width = 900;
   const height = 450;
-  const xOffset = width / 2 - 200; // Adjust x offset here
-  const yOffset = height / 2 - 5; // Adjust y offset here
+  const xOffset = width / 2 - 200; 
+  const yOffset = height / 2 - 5; 
 
   return geoOrthographic()
     .rotate(rotation)
@@ -51,7 +51,7 @@ const MapChart = () => {
  
 
   const handleMouseDown = (event) => {
-    event.currentTarget.style.cursor = "grabbing"; // Change cursor to grabbing during drag
+    event.currentTarget.style.cursor = "grabbing"; 
     event.currentTarget.dataset.dragging = "true";
     event.currentTarget.dataset.startX = event.clientX;
     event.currentTarget.dataset.startY = event.clientY;
@@ -63,7 +63,7 @@ const MapChart = () => {
       const startY = parseInt(event.currentTarget.dataset.startY, 10);
       
 
-      // Update the rotation based on the movement
+    
       setRotation((prevRotation) => {
         const diffX = event.clientX - startX;
         const diffY = event.clientY - startY;
@@ -86,7 +86,7 @@ const MapChart = () => {
   };
 
   const handleMouseUpOrLeave = (event) => {
-    event.currentTarget.style.cursor = "grab"; // Reset cursor to grab
+    event.currentTarget.style.cursor = "grab"; 
     event.currentTarget.dataset.dragging = "false";
   };
 
@@ -123,7 +123,7 @@ const MapChart = () => {
   };
 
   const handleEndOrLeave = (event) => {
-    event.currentTarget.style.cursor = "grab"; // Reset cursor to grab (not applicable on most touch devices)
+    event.currentTarget.style.cursor = "grab"; 
     event.currentTarget.dataset.dragging = "false";
   };
 
