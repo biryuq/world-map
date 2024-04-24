@@ -45,11 +45,7 @@ function MapLabel(props) {
     return   <div className="flex flex-col items-start bg-blue-50/90 rounded-xl  w-full md:w-96 p-4 ">
          <h1 className="text-3xl font-bold text-left pb-8 ">Welcome to your global journey!</h1>
          <p className="text-xl text-left  font-medium text-blue-950">Spin the globe and tap any spot that catches your eye! </p>
-         <div className="flex justify-between w-full pt-2">
-         <p className="text-sm text-left  font-normal text-gray-500">data src restfulcountries.com </p>
-         <p className="text-sm text-left  font-normal text-gray-400"> | </p>
-         <p className="text-sm text-left  font-normal text-gray-500">date 24 Apr 2024</p>
-         </div>
+        
     </div>;
   }
 }

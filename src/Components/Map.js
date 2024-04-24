@@ -134,7 +134,7 @@ const MapChart = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative top-0 ">
       <div
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
@@ -186,7 +186,7 @@ const MapChart = () => {
        
         </ComposableMap>
       </div>
-      <div className="absolute bottom-2 left-2 w-full p-2 ">
+      <div className="absolute bottom-2 justify-center mb-3 mx-2 ">
         <MapLabel data={activeLable} />
       </div>
       <div className="absolute top-2 left-2">

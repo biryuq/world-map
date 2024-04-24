@@ -1,11 +1,11 @@
+import "./App.css";
 
-import './App.css';
-import Map from './Components/Map';
+import MapChart from "./Components/Map";
 
 function App() {
   return (
-    <div className="App fixed w-full">
-      <Map/>
+    <div className="fixed">
+      <MapChart />
     </div>
   );
 }
