@@ -15,27 +15,27 @@ function MapLabel(props) {
             <img src={country.href.flag} alt={`Flag of ${country.name}`} />
           </div>
           
-          <h1 className="text-3xl font-bold text-left">{props.data}</h1>
+          <h1 className="md:text-3xl text-xl font-bold text-left">{props.data}</h1>
         </div>
 
-       <div className="text-md font-bold text-left "> {country.full_name}</div>
+       <div className="md:text-base text-xs text-left "> {country.full_name}</div>
         
-        <div className="text-xl font-bold py-2 ">
-        <p className="text-base text-left font-normal text-gray-700">Capital </p>
+        <div className="md:text-xl text-md font-bold py-2 ">
+        <p className="md:text-base text-sm text-left font-normal text-gray-700">Capital </p>
         {country.capital}
         </div>
-        <div className="text-xl font-bold py-2 ">
-        <p className="text-base text-left font-normal text-gray-700">Population </p>
+        <div className="md:text-xl text-md font-bold py-2 ">
+        <p className="md:text-base text-sm font-normal text-gray-700">Population </p>
         {country.population}
         </div>
-        <div className="text-xl font-bold py-2 ">
-        <p className="text-base text-left font-normal text-gray-700">Size </p>
+        <div className="md:text-xl text-md font-bold py-2 ">
+        <p className="md:text-base text-sm  font-normal text-gray-700">Size </p>
         {country.size}
         </div>
-        <div className="flex justify-between w-full pt-2">
-         <p className="text-sm text-left  font-normal text-gray-500">data src restfulcountries.com  </p>
-         <p className="text-sm text-left  font-normal text-gray-400"> | </p>
-         <p className="text-sm text-left  font-normal text-gray-500">date 24 Apr 2024</p>
+        <div className="flex justify-between w-full ">
+         <p className="md:text-sm text-xs text-left  font-normal text-gray-500">data src restfulcountries.com  </p>
+         <p className="md:text-sm text-xs  font-normal text-gray-400"> | </p>
+         <p className="md:text-sm text-xs  font-normal text-gray-500">date 24 Apr 2024</p>
          </div>
         
       
