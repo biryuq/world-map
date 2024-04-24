@@ -4,7 +4,7 @@ import MapChart from "./Components/Map";
 
 function App() {
   return (
-    <div className="fixed">
+    <div className="fixed w-full">
       <MapChart />
     </div>
   );

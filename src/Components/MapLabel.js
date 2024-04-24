@@ -43,8 +43,8 @@ function MapLabel(props) {
     );
   } else {
     return   <div className="flex flex-col items-start bg-blue-50/90 rounded-xl  w-full md:w-96 p-4 ">
-         <h1 className="text-3xl font-bold text-left pb-8 ">Welcome to your global journey!</h1>
-         <p className="text-xl text-left  font-medium text-blue-950">Spin the globe and tap any spot that catches your eye! </p>
+         <h1 className="text-3xl font-bold text-left pb-8 ">Explore the globe! </h1>
+         <p className="text-xl text-left  font-medium text-blue-950">Spin and tap any spot that catches your eye! </p>
         
     </div>;
   }

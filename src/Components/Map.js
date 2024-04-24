@@ -134,7 +134,7 @@ const MapChart = () => {
   };
 
   return (
-    <div className="relative top-0 ">
+    <div className="relative w-full ">
       <div
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
